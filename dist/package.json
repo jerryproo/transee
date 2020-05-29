@@ -12,7 +12,7 @@
     "build:win": "electron-builder --win",
     "build": "electron-builder --mac --win"
   },
-  "repository": "https://github.com/alessioforte/transee.git",
+  "repository": "https://github.com/jerryproo/transee.git",
   "homepage": "https://alessioforte.github.io/transee/",
   "build": {
     "productName": "Transee",

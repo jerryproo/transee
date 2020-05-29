@@ -5,7 +5,7 @@ import axios from 'axios'
 export async function translate(text, opts) {
     try {
         const tk = await getToken(text)
-        const url = 'https://translate.google.com/translate_a/single'
+        const url = 'https://translate.google.cn/translate_a/single'
         const data = {
             client: 't',
             sl: opts.from,
@@ -36,7 +36,7 @@ export async function translate(text, opts) {
 
 export async function complete(text, lang) {
     try {
-        const url = 'https://clients1.google.com/complete/search'
+        const url = 'https://clients1.google.cn/complete/search'
         const data = {
             q: text,
             client: 'translate-web',
@@ -61,7 +61,7 @@ export async function translateComplete(words, opts) {
     try {
         const text = words.join('')
         const tk = await getToken(text)
-        const url = 'https://translate.google.com/translate_a/t'
+        const url = 'https://translate.google.cn/translate_a/t'
         const data = {
             client: 't',
             sl: opts.from,
@@ -93,7 +93,7 @@ export async function translateComplete(words, opts) {
 export async function voice(text, lang, speed) {
     const textlen = text.length
     const tk = await getToken(text)
-    const url = 'https://translate.google.com/translate_tts'
+    const url = 'https://translate.google.cn/translate_tts'
     const data = {
         ie: 'UTF-8',
         q: text,

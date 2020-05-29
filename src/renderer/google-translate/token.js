@@ -81,7 +81,7 @@ async function updateTKK() {
             try {
                 const res = await axios({
                     method: 'get',
-                    url: 'https://translate.google.com'
+                    url: 'https://translate.google.cn'
                 })
                 var code = res.data.match(/(tkk:').*?(?=,)/g)
                 var TKK

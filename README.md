@@ -14,7 +14,7 @@ Simple and useful tool for quick translation - reference to Google Translate
 
 1. Clone the git repository from GitHub:
 
-        git clone https://github.com/alessioforte/transee.git
+        git clone https://github.com/jerryproo/transee.git
 
 2. Open the working directory:
 
